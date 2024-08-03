@@ -23,7 +23,7 @@ body {
 }
 
 #elevator {
-  background-color: black;
+  background-color: #0d1b2a;
   height: 200px;
   width: 50%;
   border-radius: 20px;
@@ -48,8 +48,15 @@ button {
   border-radius: 50%;
   font-size: 16px;
   font-weight: 600;
-  background-color: aqua;
+  background-color: #0d1b2a;
+  color: white;
   margin-left: 20px;
+  transform: translate(2px, 2px);
+  transition: all 0.3s linear;
+}
+button:hover {
+  transform: translate(0px, 0px);
+  box-shadow: 2px 2px black;
 }
 
 .floor1,
@@ -59,11 +66,11 @@ button {
   width: 100%;
 }
 .floor1 {
-  background-color: blue;
+  background-color: rgb(33, 33, 71);
 }
 .floor2 {
-  background-color: rgb(61, 61, 175);
+  background-color: rgb(97, 97, 150);
 }
 .floor3 {
-  background-color: rgb(156, 156, 243);
+  background-color: rgb(167, 167, 226);
 }
