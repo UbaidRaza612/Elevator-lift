@@ -3,7 +3,10 @@ let elevator = document.querySelector("#elevator");
 
 btns.forEach((btn) => {
   btn.addEventListener("click", (e) => {
-    let floor = e.target.textContent;
-    elevator.style.bottom = `${floor * 200}px`;
+    let floor = `${e.target.textContent * 200}px` ;
+    elevator.style.bottom = floor;
+    localStorage.setItem("floor" , floor)
   });
 });
+
+elevator.style.bottom = localStorage.getItem("floor");

@@ -23,7 +23,11 @@ body {
 }
 
 #elevator {
-  background-color: #0d1b2a;
+  /* background-color: #0d1b2a; */
+  background-image: url(./elevator\ \(1\).jpeg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
   height: 200px;
   width: 50%;
   border-radius: 20px;
@@ -33,7 +37,6 @@ body {
   transform: translateX(-50%);
   transition: all 2s ease-in-out;
 }
-
 
 .button {
   display: flex;
